@@ -43,15 +43,14 @@ const PlayerList = (props) => {
       {
         props.players.map((value, index) => {
           return (
-            
-              <div key={index} className="player player-name">{value.name}
-                <div className="player-score">
+            <div className="player">
+              <div key={index} className="player-name">{value.name}</div>
+              <div className="player-score">
                   <button className="counter counter-action decrement">-</button>
                   <span className="counter-score">{value.score}</span>
                   <button className="counter counter-action increment">+</button>
-                </div>
               </div>
-            
+            </div>
           )
         })
       }
